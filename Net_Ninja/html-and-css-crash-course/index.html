@@ -1,63 +1,59 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>HTML Forms</title>
-    </head>
-    <body>
 
-        <h1>HTML FORMS</h1>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <title>Marioclub</title>
+</head>
 
-        <form>
+<body>
 
-            <label for="username">enter username:</label>
-            <input type="text" id="username" name="username"placeholder="username" required>
+<header>
+    <h1>
+        Marioclub
+    </h1>
+</header>
 
-            <br><br>
+<section class="banner">
+    <img src="img/banner.png" alt="marioclub welcome banner">
+    <div class="welcome">
+        <h2>Welcome to <br><span>Marioclub</span></h2>
+    </div>
+</section>
 
-            <label for="email">enter email:</label>
-            <input type="email" id="email" name="email"placeholder="email" required>
+<nav class="main-nav">
+    <ul>
+        <li><a href="/join.html" class="join">Join the club</a></li>
+        <li><a href="/news.html">Latest news</a></li>
+        <li><a href="/games.html">New games</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+    </ul>
+</nav>
 
-            <br><br>
+<main>
+    <article>
+        <h2>It's a me, Mario</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At eum ea obcaecati quisquam aliquid inventore possimus sapiente, repudiandae quaerat consequuntur. Perferendis quibusdam esse unde, non ipsam necessitatibus dolore aspernatur nobis?
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident dicta eveniet recusandae in vitae, doloribus distinctio labore soluta aperiam adipisci reiciendis quibusdam, debitis consequatur fugiat voluptatum aliquid alias non. Sit Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, alias? Sunt velit perferendis molestias reiciendis ullam. Nisi qui quam odit eaque accusantium magnam, voluptatem iusto non inventore eligendi sit reprehenderit.</p>
+    </article>
 
-            <label for="password">password:</label>
-            <input type="password" id="password" name="password"placeholder="password" required>
+    <ul class="images">
+        <li><img src="img/thumb-1.png" alt="mario thumb 1"></li>
+        <li><img src="img/thumb-2.png" alt="mario thumb 2"></li>
+    </ul>
 
-            <p>Select your age:</p>
-            
-            <input type="radio" name="age" value="0-25" id="option-1">
-            <label for="option-1">0-25</label>
+</main>
+    
+        <section class="join">
+            <h2>Join today!</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ducimus nemo repudiandae quod autem quos, officiis ab pariatur quas, dicta nam nihil voluptatem impedit itaque, consequatur a aut. Expedita, repellat!</p>
+            <form>
+                <input type="email" name="email" placeholder="Type email" required>
+            </form>
+        </section>
 
-            <input type="radio" name="age" value="26-50" id="option-2">
-            <label for="option-1">26-50</label>
+    <footer>
+        <p class="copyright">COPYRIGTH IS FOR LOSERS -BANKSY</p>
+    </footer>
+</body>
 
-            <input type="radio" name="age" value="51+" id="option-3">
-            <label for="option-1">51+</label>
-
-            <br><br>
-
-            <label for="question">Security Question:</label>
-            <select name="question" id="question">
-                <option value="q1">What is your name?</option>
-                <option value="q2">What is your quest?</option>
-                <option value="q3">What is your favourite colour?</option>
-            </select>
-
-            <br><br>
-            
-            <label for="question">Security Question Answer:</label>
-            <input type="text" id="answer" name="answer">
-            
-            <br><br>
-
-            <label for="bio">Your bio:</label><br>
-            <textarea name="bio" id="bio" cols="30" rows="10" placeholder="Enter your bio..."></textarea>
-
-            <br><br>
-
-            <input type="submit" value="submit the form">
-            <!-- <button>Submit form</button> -->
-
-        </form>
-
-    </body>
 </html>
